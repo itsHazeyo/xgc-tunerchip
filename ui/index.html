@@ -15,35 +15,35 @@
       <div id="tablet">
         <div class="tuner">
           <div class="slidecontainer">
-            <h1>Boost</h1>
-            <p>Normal | High</p>
+            <h1>Power level (.100 = 100BHP)</h1>
+            <p>Current value: <span id="currentBoost">0</span></p>
             <input type="range" min="0" max="10" step="1" class="slider" id="boostSlider">
           </div>
           <div class="slidecontainer">
-            <h1>Acceleration</h1>
-            <p>Normal | Faster</p>
-            <input type="range" min="0" max="10" step="1" class="slider" id="accelerationSlider">
+            <h1>Methanol Mix (Less | More)</h1>
+            <p>Current value: <span id="currentAcceleration">1</span></p>
+            <input type="range" min="1" max="10" step="1" class="slider" id="accelerationSlider">
           </div>
           <div class="slidecontainer">
-            <h1>Gear Change</h1>
-            <p>Normal | Faster</p>
-            <input type="range" min="0" max="10" step="1" class="slider" id="gearSlider">
+            <h1>Gear Change Speed (if in automatic) (Normal | Faster)</h1>
+            <p>Current value: <span id="currentGearChange">0</span></p>
+            <input type="range" min="0" max="9" step="1" class="slider" id="gearSlider">
           </div>
           <div class="slidecontainer">
-            <h1>Breaking</h1>
-            <p>Rear | Front</p>
-            <input type="range" min="0" max="10" step="1" class="slider" id="breakSlider">
+            <h1>Braking Bias (Rear | Front)</h1>
+            <p>Current value: <span id="currentBraking">6</span></p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="brakingSlider">
           </div>
-          <div class="slidecontainer">
-            <h1>Drive Train</h1>
-            <p>Rear | Front</p>
+        <!---  <div class="slidecontainer">
+            <h1>Drive Train (Rear | Front)</h1>
+            <p>Current value: <span id="currentDriveTrain">0</span></p>
             <input type="range" min="0" max="10" step="1" class="slider" id="drivetrainSlider">
-          </div>
+          </div> --->
           
           <div class="buttonscontainer">
-            <button class="btn greenButton" id="saveButton">Save</button>
-            <button class="btn greenButton" id="defaultTuneButton">Default</button>
-            <button class="btn greenButton" id="sportTuneButton">Sport</button>
+            <button class="btn greenButton" id="saveButton">Flash</button>
+            <button class="btn greenButton" id="defaultTuneButton">Read</button>
+           <!--- <button class="btn greenButton" id="sportTuneButton">Sport</button> --->
 
           </div>
           
